@@ -1,18 +1,24 @@
 {
-  "name": "ES6",
+  "name": "es",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "build": "babel src -d dist --presets es2015",
-    "watch": "babel src -d dist --presets es2015 -w"
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1"
   },
-  "keywords": [],
+  "scripts": {
+    "build": "babel src -d dist --presets es2015"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karpolena/ES.git"
+  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-es2015": "^6.24.1"
-  }
+  "bugs": {
+    "url": "https://github.com/Karpolena/ES/issues"
+  },
+  "homepage": "https://github.com/Karpolena/ES#readme"
 }
