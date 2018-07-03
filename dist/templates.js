@@ -1,27 +1,26 @@
-'use strict';
-
-var _templateObject = _taggedTemplateLiteral(['Hello ', ''], ['Hello ', '']);
-
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
 function greet(name) {
-    console.log(('Hello  ' + name).toUpperCase());
+    console.log(`Hello  ${name}`.toUpperCase());
 }
 greet('bill');
 
 function createEmail(to, from, subject, message) {
-    console.log('\n    To: ' + to + '\n    From: ' + from + '\n    Subject: ' + subject + '\n    Message: ' + message + '\n    ');
+    console.log(`
+    To: ${to}
+    From: ${from}
+    Subject: ${subject}
+    Message: ${message}
+    `);
 }
 createEmail('john@.com', 'jane@.com', 'Hello', 'How are you doing?');
 
 function add(x, y) {
-    console.log(x + ' + ' + y + ' = ' + (parseInt(x) + parseInt(y)));
+    console.log(`${x} + ${y} = ${parseInt(x) + parseInt(y)}`);
 }
 add('5', '7');
 
 // Тегирование
-var name = 'Bill';
-console.log(upperName(_templateObject, name));
+let name = 'Bill';
+console.log(upperName`Hello ${name}`);
 function upperName(literals, value) {
     return literals[0] + value.toUpperCase();
 }

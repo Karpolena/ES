@@ -1,3 +1,1 @@
-'use strict';
-
-var name = 'CodeDojo';
+let name = 'CodeDojo';

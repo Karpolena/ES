@@ -5,11 +5,15 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1"
   },
   "scripts": {
-    "build": "babel src -d dist --presets es2015"
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "build-linux": "node_modules/gulp/bin/gulp.js build",
+    "watch-linux": "node_modules/gulp/bin/gulp.js watch"
   },
   "repository": {
     "type": "git",
